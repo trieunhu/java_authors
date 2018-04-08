@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+ <!DOCTYPE tiles-definitions PUBLIC  
+     "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+     "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+
+ <tiles-definitions>  
+
+   <definition name="template.mytemplate" template="/WEB-INF/views/layouts/main.jsp" preparer="com.backend.widgets.HeaderPreparer" >  
+     <put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" /> 
+     <put-attribute name="menu" value="/WEB-INF/views/layouts/main_menu.jsp" />  
+     <put-attribute name="content" value="" />  
+      <put-attribute name="title" value="Home Page1111"/>
+     <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />  
+   </definition>  
+   <definition name="template.login" template="/WEB-INF/views/layouts/main_login.jsp" preparer="com.backend.widgets.HeaderPreparer" >  
+     <put-attribute name="content" value="" />  
+   </definition>  
+   
+   <definition name="home_index" extends="template.mytemplate">  
+       <put-attribute name="title" value="Home Page1111" />  
+       <put-attribute name="body" value="/WEB-INF/views/home/index.jsp" />  
+   </definition> 
+    <definition name="user_changepassword" extends="template.mytemplate">  
+       <put-attribute name="title" value="Home Page1111" />  
+       <put-attribute name="body" value="/WEB-INF/views/user/changpassword.jsp" />  
+   </definition>  
+    <definition name="user_update" extends="template.mytemplate">  
+       <put-attribute name="title" value="Home Page1111" />  
+       <put-attribute name="body" value="/WEB-INF/views/user/update.jsp" />  
+   </definition>
+    <definition name="user_create" extends="template.mytemplate">  
+       <put-attribute name="title" value="Home Page1111" />  
+       <put-attribute name="body" value="/WEB-INF/views/user/create.jsp" />  
+   </definition> 
+   <definition name="post_create" extends="template.mytemplate"> 
+       <put-attribute name="body" value="/WEB-INF/views/post/create.jsp" />  
+   </definition> 
+    <definition name="post_index" extends="template.mytemplate"> 
+       <put-attribute name="body" value="/WEB-INF/views/post/index.jsp" />  
+   </definition>  
+   <definition name="login_index" extends="template.login">  
+       <put-attribute name="body" value="/WEB-INF/views/login/index.jsp" />  
+   </definition>   
+
+ </tiles-definitions>  

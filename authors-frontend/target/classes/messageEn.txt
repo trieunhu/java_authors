@@ -1,0 +1,6 @@
+all_authors=All authors
+all_posts=All articles
+all_postsbyauthor=All articles by {0}
+post_ralated=New Posts
+author=Authors
+home=Home

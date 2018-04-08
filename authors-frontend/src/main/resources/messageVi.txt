@@ -1,0 +1,9 @@
+all_authors=Tất cả tác giả
+all_posts=Tất cả bài viết
+all_postsbyauthor=Tất cả bài viết của tác giả {0}
+post_ralated=Bài viết mới nhất
+author=Tác giả
+home=Trang chủ
+newPost=Bài viết mới nhất
+countPostUser=Số lượng bài viết: {0}
+postAuthor=Bài viết cùng tác giả
